@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>الموديول السابع</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ <link href="desgin/bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<script src="desgin/bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+<script src="desgin/bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+<script src="desgin/bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+	  <script src="js/common_scripts.min.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/jquery.formtowizard.js"></script>
+		<script>
+			$(function () {
+				var $signupForm = $('#SignupForm');
+
+				$signupForm.validate({
+					errorElement: 'em',
+					submitHandler: function (form) {
+						alert('submitted');
+						form.submit();
+					}
+				});
+
+				$signupForm.formToWizard({
+				 
+					nextBtnClass: 'col-md-2 btn btn-primary next',
+					prevBtnClass: 'col-md-2 btn btn-default prev ml',
+					buttonTag: 'button',
+					nextBtnName:       'التالى &gt;',
+				   
+						prevBtnName:       '&lt; السابق',
+
+					onStepChanging: function (event, currentIndex, newIndex) {
+						if (currentIndex == 2) {
+
+
+
+
+						}
+					}
+
+				  
+				});
+			});
+
+		</script>       
+		  <script>
+			// You can also use "$(window).load(function() {"
+				$(function () {
+				  // Slideshow 1
+				  $("#slider1").responsiveSlides({
+					maxwidth: 2500,
+					speed: 600
+				  });
+				 
+				 
+			});
+			
+			function loadProg()
+				 {
+			$('#btn-close').show();
+				 $('.prog').html('<iframe src="en_ITEPC_VA_Desktop_v40/index.html" style="width: 975px; height: 610px; border: 2px solid #cccccc; border-radius: 12px;  margin-top: 23px;">');
+				 }
+		  </script>
+
+
+
+
+
+	<style>
+	   .steps{
+			display:none!important
+		}	
+       
+        button#step0Next {
+    margin-right:44% !important
+}
+
+     #step0Next .commands       {
+           margin-right:44%
+       }
+	   .commands{
+			   text-align: center;
+	display: flex;
+	direction:rtl
+	   }
+	   .col-md-2 .btn btn-default .prev .btn-block{
+			   margin-left: 32% !important;
+	   }
+	   .ml{
+ margin-right: 32% !important;
+	   }
+	   .about-info p a.titles{
+		   width:auto!important
+	   }
+		.about-info {
+			width: 86%;
+			margin:0px !important;
+		}
+		.lesson-nav .top-nav ul li{
+			text-align:right;
+		}
+	   @media(max-width:767px){
+           	 button#step0Next {
+    margin-right:0% !important
+}
+			 .ml{
+ margin-right: 0% !important;
+	   }
+			 .about-info{
+					 margin-left: 0px!important;
+	margin-right: 0px!important;
+		width: 86%;
+			 }
+
+               #step0commands{
+           margin-right:0%
+       }
+	   }
+	</style>
+</head>
+<body>
+	<!---start-header---->
+			<div class="header">
+				<div class="wrap">
+
+
+<div class="top-nav">
+<ul>
+<li><a href="index.html">
+<i class="fa fa-home"></i> الرئيسة</a></li>
+<li><a href="./help.html"><i class="fa fa-life-ring"></i> التعليمات</a></li>
+<li><a href="aims.html"><i class="fa fa-crosshairs"></i> الأهداف</a></li>
+<li class="active"><a href="./menu.html"><i class="fa fa-folder-open-o"></i> الموديولات</a></li>
+<li><a href="contact.html"><i class="fa fa-envelope"></i> اتصل بنا</a></li>
+</ul>
+</div>
+<div class="clear"> </div>
+</div>
+		</div>
+			<!---End-header---->
+		<!---start-content---->
+<div class="content">
+<div class="wrap">
+<div class="about-us">
+<div class="about-header">
+<h3 style="background:url(./images/bg-h2-wide.png) repeat-x center; font-family:fonty">الموديول السابع:
+ مهارات التنظيم الذاتي للتعلم</h3>
+</div>
+
+<div class="lesson-nav">
+
+<div class="top-nav nav-right">
+<ul>
+<li style="display:block; margin:5px auto; width:100%;" class="active">
+<a class="title">
+<i class="fa fa-bars"></i> الموديول السابع</a>
+</li>
+
+
+<li>
+<a href="./module_7_1.html" style="padding:5px 12px;">
+<i class="fa fa-book"></i> الأهداف</a>
+</li>
+
+<li>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeSzbTHQmuaBJ08tHuibynL4sOTKAEqmrejMPPFYidXSTF_aw/viewform" style="padding:5px 12px;">
+<i class="fa fa-external-link"></i> الاختبار القبلي</a>
+</li>
+
+<li>
+<a href="./module_7_1.html" style="padding:5px 12px;">
+<i class="fa fa-film"></i> المحتوى</a>
+</li>
+<li>
+<a href="./resourse_7.html" style="padding:5px 12px;">
+<i class="fa fa-film"></i> مصادر التعلم</a>
+</li>
+
+<li>
+<a href="./Podcast_7.html" style="padding:5px 12px;">
+<i class="fa fa-film"></i>بودكاست</a>
+</li>
+
+<li>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSclt0-l45wAH8dCVUPnGCH5MHZv-YptB0ksreSb5H6qB2UsIg/viewform" style="padding:5px 12px;">
+<i class="fa fa-cog"></i> الاختبار البعدي</a>
+</li>
+
+
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+	   <form id="SignupForm" method="POST" action="" autocomplete="off">
+   <fieldset>
+				 <div class="form-group col-md-12 col-xs-12">
+<div class="about-info" style="">
+<div class="col-md-12 col-xl-12">
+<p style="text-align:right; direction:rtl;">
+<a id="mod_aim"></a>
+<span class="aim">
+<img src="images/m7-01.jpg">
+<img src="images/m7-02.jpg">
+<img src="images/m7-03.jpg">
+<img src="images/m7-04.jpg">
+<img src="images/m7-05.jpg">
+<img src="images/m7-06.jpg">
+<img src="images/m7-07.jpg">
+
+</span>
+</p>
+</div>
+
+</div>
+					 </div>
+	   </fieldset>
+   
+   		   </form>
+	</div>
+	</div>
+	</div>
+	  
+	</body>
+
+
+</html>

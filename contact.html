@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>المساعدة</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
+<script type="text/javascript" src="js/jquery-1.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script src="contactformvalidation.js"></script>
+
+<script>
+	required.add('Full_Name','NOT_EMPTY','Full Name');
+	required.add('Email_Address','EMAIL','Email Address');
+	required.add('Your_Message','NOT_EMPTY','Your Message');
+	required.add('AntiSpam','NOT_EMPTY','Anti-Spam Question');
+
+
+</script>
+<script>
+		    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 1
+			      $("#slider1").responsiveSlides({
+			        maxwidth: 2500,
+			        speed: 600
+			      });
+				 
+				 
+			});
+			
+			function loadProg()
+				 {
+			$('#btn-close').show();
+				 $('.prog').html('<iframe src="en_ITEPC_VA_Desktop_v40/index.html" style="width: 975px; height: 610px; border: 2px solid #cccccc; border-radius: 12px;  margin-top: 23px;">');
+				 }
+		  </script>
+
+
+</head>
+<body>
+		<!---start-wrap---->
+			<!---start-header---->
+			<div class="header">
+				<div class="wrap">
+
+
+<div class="top-nav">
+<ul>
+<li><a href="index.html">
+<i class="fa fa-home"></i> الرئيسة</a></li>
+<li><a href="./help.html"><i class="fa fa-life-ring"></i> التعليمات</a></li>
+<li><a href="aims.html"><i class="fa fa-crosshairs"></i> الأهداف</a></li>
+<li><a href="./menu.html"><i class="fa fa-folder-open-o"></i> الموديولات</a></li>
+<li class="active"><a href="contact.html"><i class="fa fa-envelope"></i> اتصل بنا</a></li>
+</ul>
+</div>
+<div class="clear"> </div>
+</div>
+			<!---End-header---->
+		</div>
+		<!---End-wrap---->
+		<div class="clear"> </div>
+		<!---start-content---->
+		<div class="content">
+			<div class="wrap">
+			<!---start-contact---->
+			<div class="section group">				
+<div class="col span_1_of_3" style="float:right; direction:rtl; text-align:right;">
+<div class="contact_info">
+<h3 style="font-family:fonty;">المساعدة والاتصال:</h3>
+</div>
+<div class="company_address">
+<h3>يمكنكم الاتصال بمسؤول الموقع<br/> عبر الوسائل التالية :</h3>
+
+<p>هاتف: 01099339558</p>
+<p style="margin-top:10px;">
+<span><a href="https://www.facebook.com/groups/1263749231056435/?ref=share" target="_blank"><img src="images/icons/facebook.png" /></a></span> <br/>
+<span><a href="https://web.whatsapp.com/" target="_blank"><img src="images/icons/whats.png" /></a></span> <br/><br/>
+لرفع الأنشطة والتواصل يرجى المراسلة علي البريد التالي : 
+<br/>
+DigiContent3@gmail.com
+
+
+
+
+
+
+
+</p>
+</div>
+</div>				
+
+<div class="col span_2_of_3" style="float:left;">
+<div class="contact-form">
+<h3 style="font-family:fonty; text-align:right; direction:rtl;">نموذج المراسلة:</h3>
+
+<div id="contact_form_1" style="margin-top:20px;">
+<!-- contact-form START here -->
+<div id="error-msg" style=" text-align:right; font-size:14px;">
+<p class="error wrong_name"><small><strong>من فضلك أكتب الإسم</strong></small></p>
+<p class="error wrong_email"><small><strong>من فضلك اكتب البريد الإلكترونى</strong></small></p>
+<p class="error wrong_message"><small><strong>من فضلك أكتب الرسالة</strong></small></p>
+</div>
+
+<form action="contact.php" id="contact_form" method="post">
+<div>
+<span><label>الإسم</label></span>
+<span><input name="cform_name" id="name" type="text" class="textbox"></span>
+</div>
+<div>
+<span><label>البريد الإلكترونى</label></span>
+<span><input name="cform_email" id="email" type="text" class="textbox"></span>
+</div>
+<div>
+<span><label>الهاتف</label></span>
+<span><input name="cform_phone" id="phone" type="text" class="textbox"></span>
+</div>
+<div>
+<span><label>الرسالة</label></span>
+<span><textarea name="cform_message" id="message"> </textarea></span>
+</div>
+<div>
+<span><input type="button" class="mybutton" value="إرسال" name="submit" id="submit" onclick="alert('تم ارسال الرسالة بنجاح');"></span>
+</div>
+</form>
+
+</div>
+</div>				
+
+</div>
+</div>
+<!---End-contact---->
+<div class="clear"> </div>
+</div>
+</div>
+<!---End-content---->
+<div class="clear"> </div>
+
+
+
+<div class="clear"></div>
+
+	</html>
+<!--
+
+<div class="search">
+<form class="searchform cf" action="http://www.google.com/search" method="get" target="_blank">
+<input name="q" type="text" placeholder="اكتب ما تريد البحث عنه هنا" />
+<button type="submit" name="go" id="go">بحث</button>
+
+<div class="checkMe" style="display:none;">	
+<input type="checkbox" class="Mycheckbox"  name="sitesearch" value="augbookmaster.com" checked />
+    <label for="checkbox">بحث داخل الموقع</label> 
+    </div>
+</form>
+</div>
+
+<div class="clear"> </div>
+					</div>
+</div>
+</div>      
+
+<div style="margin:0px auto; display:block; width:53%;">
+
+
+
+</html>

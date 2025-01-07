@@ -1,0 +1,495 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>الموديول الثالث</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />	
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
+  <link href="desgin/bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<script src="desgin/bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+<script src="desgin/bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+<script src="desgin/bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+	  <script src="js/common_scripts.min.js"></script>
+	<script src="js/functions.js"></script>
+	<script src="js/jquery.formtowizard.js"></script>
+		<script>
+			$(function () {
+				var $signupForm = $('#SignupForm');
+
+				$signupForm.validate({
+					errorElement: 'em',
+					submitHandler: function (form) {
+						alert('submitted');
+						form.submit();
+					}
+				});
+
+				$signupForm.formToWizard({
+				 
+					nextBtnClass: 'col-md-2 btn btn-primary next',
+					prevBtnClass: 'col-md-2 btn btn-default prev ml',
+					buttonTag: 'button',
+					nextBtnName:       'التالى &gt;',
+				   
+						prevBtnName:       '&lt; السابق',
+
+					onStepChanging: function (event, currentIndex, newIndex) {
+						if (currentIndex == 2) {
+
+
+
+
+						}
+					}
+
+				  
+				});
+			});
+
+		</script>       
+		  <script>
+			// You can also use "$(window).load(function() {"
+				$(function () {
+				  // Slideshow 1
+				  $("#slider1").responsiveSlides({
+					maxwidth: 2500,
+					speed: 600
+				  });
+				 
+				 
+			});
+			
+			function loadProg()
+				 {
+			$('#btn-close').show();
+				 $('.prog').html('<iframe src="en_ITEPC_VA_Desktop_v40/index.html" style="width: 975px; height: 610px; border: 2px solid #cccccc; border-radius: 12px;  margin-top: 23px;">');
+				 }
+		  </script>
+
+
+
+
+
+	<style>
+     	 button#step0Next {
+    margin-right:44% !important
+}
+	   .steps{
+			display:none!important
+		}
+	   .commands{
+			   text-align: center;
+	display: flex;
+	direction:rtl
+	   }
+	   .col-md-2 .btn btn-default .prev .btn-block{
+			   margin-left: 32% !important;
+	   }
+	   .ml{
+ margin-right: 32% !important;
+	   }
+	   .about-info p a.titles{
+		   width:auto!important
+	   }
+		.about-info {
+			width: 86%;
+			margin:0px !important;
+		}
+		.lesson-nav .top-nav ul li{
+			text-align:right;
+		}
+	   @media(max-width:767px){
+           	 button#step0Next {
+    margin-right:0% !important
+}
+			 .ml{
+ margin-right: 0% !important;
+	   }
+			 .about-info{
+					 margin-left: 0px!important;
+	margin-right: 0px!important;
+		width: 86%;
+			 }
+	   }
+	</style>
+
+
+</head>
+<body>
+	<!---start-header---->
+			<div class="header">
+				<div class="wrap">
+
+<div class="top-nav">
+<ul>
+<li><a href="index.html">
+<i class="fa fa-home"></i> الرئيسة</a></li>
+<li><a href="./help.html"><i class="fa fa-life-ring"></i> التعليمات</a></li>
+<li><a href="aims.html"><i class="fa fa-crosshairs"></i> الأهداف</a></li>
+<li class="active"><a href="./menu.html"><i class="fa fa-folder-open-o"></i> الموديولات</a></li>
+<li><a href="contact.html"><i class="fa fa-envelope"></i> اتصل بنا</a></li>
+</ul>
+</div>
+<div class="clear"> </div>
+</div>
+		</div>
+			<!---End-header---->
+		<!---start-content---->
+<div class="content">
+<div class="wrap">
+<div class="about-us">
+<div class="about-header">
+<h3 style="background:url(./images/bg-h2-wide.png) repeat-x center; font-family:fonty; font-size:24px;">الموديول الثالث:
+ عملية تصميم المحتوى الرقمي التعليمي</h3>
+</div>
+
+<div class="lesson-nav">
+
+<div class="top-nav nav-right">
+<ul>
+<li style="display:block; margin:5px auto; width:100%;" class="active">
+<a class="title">
+<i class="fa fa-bars"></i> الموديول الثالث</a>
+</li>
+<li>
+<a href="./module_3_1.html" style="padding:5px 12px;">
+<i class="fa fa-book"></i> الأهداف</a>
+</li>
+<li>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdXnjggh1bPLTjWbhMjndrqf29mWQyf2x5NFzUXyRYh3uwVoA/viewform" style="padding:5px 12px;">
+<i class="fa fa-external-link"></i> الاختبار القبلي</a>
+</li>
+<li>
+<a href="./module_3_1.html" style="padding:5px 12px;">
+<i class="fa fa-film"></i> المحتوى</a>
+</li>
+<li>
+<li>
+<a href="resourse_3.html" style="padding:5px 12px;">
+<i class="fa fa-film"></i> مصادر التعلم</a>
+</li>
+<li>
+<a href="./Podcast_3.html" style="padding:5px 12px;">
+<i class="fa fa-film"></i>بودكاست</a>
+</li>
+
+<li>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeyIyE5NbwzFqLmUENllQLv3dMe4sIVrDhXfrZqtn9PzCZryQ/viewform" style="padding:5px 12px;">
+<i class="fa fa-cog"></i> الاختبار البعدي</a>
+</li>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+
+
+ <form id="SignupForm" method="POST" action="" autocomplete="off">
+<fieldset>
+				 <div class="form-group col-md-12 col-xs-12">
+<div class="about-info" style="">
+<div class="col-md-12 col-xl-12">
+
+    <p style="text-align:right; direction:rtl;">
+<a id="mod_aim"></a>
+<span class="aim">
+<img src="./images/3.png"> 
+</span>
+	</p>
+
+    </div>
+
+</div>
+					 </div>
+ </fieldset>
+
+
+<fieldset>
+<div class="form-group col-md-12 col-xs-12">
+<div class="about-info" style="">
+<div class="col-md-12 col-xl-12">
+<p style="text-align:right; direction:rtl;">
+<img src="images/MM3.jpg">
+<div align="center">
+<audio controls>
+<source src="audio/M3-1.ogg" type="audio/ogg">
+<source src="audio/M3-1.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+Your browser does not support the audio tag.
+</audio>
+</div>
+
+
+
+
+
+</p>
+
+    </div>
+
+</div>
+					 </div>
+	   </fieldset>
+<fieldset>
+<div class="form-group col-md-12 col-xs-12">
+<div class="about-info" style="">
+<div class="col-md-12 col-xl-12">
+<p style="text-align:right; direction:rtl;">
+
+<img src="images/M3-02.jpg">
+
+<div align="center">
+<audio controls>
+<source src="audio/M3-2.ogg" type="audio/ogg">
+<source src="audio/M3-2.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+Your browser does not support the audio tag.
+</audio>
+</div>
+<div align="center">
+<audio controls>
+<source src="audio/M3-9.ogg" type="audio/ogg">
+<source src="audio/M3-9.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+Your browser does not support the audio tag.
+</audio>
+</div>
+
+
+
+
+
+</p>
+
+    </div>
+
+</div>
+					 </div>
+	   </fieldset>
+<fieldset>
+<div class="form-group col-md-12 col-xs-12">
+<div class="about-info" style="">
+<div class="col-md-12 col-xl-12">
+<p style="text-align:right; direction:rtl;">
+
+<img src="images/M3-03.jpg">
+<div align="center">
+<audio controls>
+<source src="audio/M3-3.ogg" type="audio/ogg">
+<source src="audio/M3-3.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+Your browser does not support the audio tag.
+</audio>
+</div>
+
+
+
+
+</p>
+
+    </div>
+
+</div>
+					 </div>
+	   </fieldset>
+<fieldset>
+<div class="form-group col-md-12 col-xs-12">
+<div class="about-info" style="">
+<div class="col-md-12 col-xl-12">
+<p style="text-align:right; direction:rtl;">
+
+<img src="images/M3-04.jpg">
+</p>
+
+    </div>
+
+</div>
+					 </div>
+	   </fieldset>
+<fieldset>
+<div class="form-group col-md-12 col-xs-12">
+<div class="about-info" style="">
+<div class="col-md-12 col-xl-12">
+<p style="text-align:right; direction:rtl;">
+
+<img src="images/M3-05.jpg">
+
+<div align="center">
+<audio controls>
+<source src="audio/M3-4.ogg" type="audio/ogg">
+<source src="audio/M3-4.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+Your browser does not support the audio tag.
+</audio>
+</div>
+
+
+
+
+
+</p>
+
+    </div>
+
+</div>
+					 </div>
+	   </fieldset>
+<fieldset>
+<div class="form-group col-md-12 col-xs-12">
+<div class="about-info" style="">
+<div class="col-md-12 col-xl-12">
+<p style="text-align:right; direction:rtl;">
+
+<img src="images/M3-06.jpg">
+<div align="center">
+<audio controls>
+<source src="audio/M3-5.ogg" type="audio/ogg">
+<source src="audio/M3-5.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+Your browser does not support the audio tag.
+</audio>
+</div>
+
+
+
+
+</p>
+
+    </div>
+
+</div>
+					 </div>
+	   </fieldset>
+<fieldset>
+<div class="form-group col-md-12 col-xs-12">
+<div class="about-info" style="">
+<div class="col-md-12 col-xl-12">
+<p style="text-align:right; direction:rtl;">
+
+<img src="images/M3-07.jpg">
+<div align="center">
+<audio controls>
+<source src="audio/M3-6.ogg" type="audio/ogg">
+<source src="audio/M3-6.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+Your browser does not support the audio tag.
+</audio>
+</div>
+
+
+
+
+</p>
+
+    </div>
+
+</div>
+					 </div>
+	   </fieldset>
+<fieldset>
+<div class="form-group col-md-12 col-xs-12">
+<div class="about-info" style="">
+<div class="col-md-12 col-xl-12">
+<p style="text-align:right; direction:rtl;">
+
+<img src="images/M3-08.jpg">
+
+<div align="center">
+<audio controls>
+<source src="audio/M3-7.ogg" type="audio/ogg">
+<source src="audio/M3-7.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+Your browser does not support the audio tag.
+</audio>
+</div>
+<div align="center">
+<audio controls>
+<source src="audio/M3-10.ogg" type="audio/ogg">
+<source src="audio/M3-10.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+Your browser does not support the audio tag.
+</audio>
+</div>
+
+
+
+
+
+
+</p>
+
+    </div>
+
+</div>
+					 </div>
+	   </fieldset>
+<fieldset>
+<div class="form-group col-md-12 col-xs-12">
+<div class="about-info" style="">
+<div class="col-md-12 col-xl-12">
+<p style="text-align:right; direction:rtl;">
+
+<img src="images/M3-09.jpg">
+<div align="center">
+<audio controls>
+<source src="audio/M3-8.ogg" type="audio/ogg">
+<source src="audio/M3-8.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+Your browser does not support the audio tag.
+</audio>
+</div>
+
+
+
+
+</p>
+
+    </div>
+
+</div>
+					 </div>
+	   </fieldset>
+
+<fieldset>
+<div class="form-group col-md-12 col-xs-12">
+<div class="about-info" style="">
+<div class="col-md-12 col-xl-12">
+<p style="text-align:right; direction:rtl;">
+
+<img src="images/NA-3.png">
+
+</p>
+
+    </div>
+
+</div>
+					 </div>
+	   </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+         </form>
+
+
+
+
+  </div>
+       </div>
+
+
+	</body>
+	</html>

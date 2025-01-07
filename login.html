@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head runat="server">
+    <title>تسجيل الدخول</title>
+
+    <link rel="stylesheet" href="Resources/css/login.css" type="text/css" />
+     <link href="desgin/bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/responsiveslides.min.js"></script>
+<script type="text/javascript" src="desgin/bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="desgin/bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="desgin/bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+<style type="text/css">
+    .login{
+            width: 470px;
+     float: unset!important; 
+    margin-top: 61px;
+    margin-right: 30px;
+    font-size: 20px;
+    }
+    .logo{
+        float: right;
+    width: 100%;
+    text-align: right;
+    margin-top: 22px;
+    }
+    input[type="submit"]{
+        height:auto!important;
+    }
+    .error{
+        width:auto!important;
+        margin-top:0px!important;
+    }
+    table{
+        width:auto!important
+    }
+</style>
+</head>
+<body>
+    <div id="container">
+        <form id="form1" runat="server">
+            <div class="col-md-8 col-offset-8">
+                     <div class="login">
+            <div class="col-md-8 col-xs-12 logo">
+              
+                        تسجيل الدخول
+                    
+                        <img style="margin-top: -3px;" src="Resources/images/lock.png" alt="" />
+                    
+            </div>
+        </div>
+
+            </div>
+   
+        <div class="username-text">
+            : اسم المستخدم</div>
+        <div class="password-text">
+            : كلمة المرور</div>
+        <div class="username-field">
+            <asp:TextBox ID="txt_username" runat="server" onkeyup="document.getElementById('error').style.display='none';"></asp:TextBox>
+        </div>
+        <div class="password-field">
+            <asp:TextBox ID="txt_password" runat="server" TextMode="Password"  onkeyup="document.getElementById('error').style.display='none';"></asp:TextBox>
+        </div>
+        <div id="error" runat="server" clientidmode="Static" class="error" visible="false">
+            <table style="float: right;">
+                <tr>
+                    <td>
+                        اسم المستخدم او كلمة المرور غير صحيحة
+                    </td>
+                    <td style="width: 30px;">
+                        <img style="margin-top: -3px;" src="Resources/images/login_Error.png" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+            <asp:Button ID="btn_register" runat="server" Text="تسجيل" OnClick="btn_register_Click" />
+
+        <asp:Button ID="btn_login" runat="server" Text="دخـول" OnClick="btn_login_Click" />
+        </form>
+    </div>
+</body>
+</html>

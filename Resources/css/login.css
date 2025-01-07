@@ -1,0 +1,205 @@
+﻿/* CSS Document */
+@font-face {
+  font-family: 'myfont';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/DroidKufi-Bold.eot') ;
+}
+
+/* CSS Document */
+@font-face {
+  font-family: 'myfont';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/DroidKufi-Bold.woff') ;
+}
+
+/* CSS Document */
+@font-face {
+  font-family: 'myfont';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/DroidKufi-Bold.ttf') ;
+}
+
+/* ------- HTML5 display-role reset for older browsers ------- */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ------- Remove Chrome's border around active fields ------- */
+
+*:focus {
+	outline: none;
+}
+
+/* ------- Disable background and border for input fields ------- */
+
+input {
+	background: transparent;
+	border: 0;
+}
+
+
+
+/* --------------------------------------------------------------- */
+
+/* ------- Body ------- */
+
+body {
+	background: #eeeeee url(../images/bg.jpg) top left repeat;
+}
+
+
+/* ------- Container ------- */
+
+#container {
+	margin: auto;
+	margin-top: 180px;
+	width: 524px;
+	height: 262px;
+	text-align: right;
+	font-family: myfont;
+	font-weight: normal;
+	font-size: 11px;
+	color: #ffffff;
+}
+
+
+/* ------- Login Form ------- */
+
+form {
+	background: url(../images/form-bg.png) top left no-repeat;
+	width: 524px;
+	height: 262px;
+	padding-top: 1px;
+}
+
+.login{
+	width: 470px;
+	float: right;
+	margin-top: 23px;
+	margin-right: 30px;
+	font-size: 20px;
+}
+
+.error{
+	width: 350px;
+	float: right;
+	margin-top: 25px;
+	margin-right: 40px;
+	font-size: 11px;
+}
+
+.username-text {
+	width: 190px;
+	float: right;
+	margin-top: 50px;
+	margin-right: 40px;
+}
+
+.password-text {
+	width: 290px;
+	float: right;
+	margin-top: 50px;
+	margin-right: 0px;
+}
+
+
+.username-field {
+	width: 168px;
+	height: 38px;
+	float:right;
+	margin-top: 10px;
+	margin-right: 35px;
+	background: url(../images/username-field.png) center right no-repeat;
+}
+
+.username-field:hover {
+	background: url(../images/username-field-hover.png) center right no-repeat;
+}
+
+.password-field {
+	width: 280px;
+	height: 38px;
+	float:right;
+	margin-top: 10px;
+	margin-right: 22px;
+	background: url(../images/password-field.png) center right no-repeat;
+}
+
+.password-field:hover {
+	background: url(../images/password-field-hover.png) center right no-repeat;	
+}
+
+input[type="text"], input[type="password"] {
+	width: 120px;
+	height: 16px;
+	margin-top: 10px;
+	margin-right: 35px;
+	font-family: myfont;
+	font-size: 13px;
+	color: #2d2d2d;
+}
+
+/* -------------------------------------------------------------------------- */
+
+input[type="submit"] {
+	width: 95px;
+	height: 73px;
+	float: left;
+	margin-left: 10px;
+	font-family: myfont;
+	font-size: 20px;
+	color: #ffffff;
+	cursor:pointer;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus {
+	background: url(../images/go-hover.png) top left no-repeat;
+}
+
+
+#footer {
+	margin: auto;
+	margin-top: 50px;
+	width: 500px;
+	height: 30px;
+	background: url(../images/footer-bg.png) bottom center no-repeat;
+	text-align: center;
+	font-family: myfont;
+	font-weight: normal;
+	font-size: 13px;
+	color: #8d8d8d;
+}
+
+#footer a {
+	text-decoration: none;
+	color: #368ad2;
+}
+
+#footer a:hover, #footer a:focus {
+	text-decoration: none;
+	color: #2d2d2d;
+}
+
