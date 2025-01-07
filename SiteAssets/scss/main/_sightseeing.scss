@@ -1,0 +1,73 @@
+.sightseeing-banner {
+  background: url("../../SiteAssets/images/sightseeing.png") no-repeat;
+  background-size: cover;
+  height: 648px;
+  position: relative;
+
+  .overlay {
+    //position: absolute;
+    width: 100%;
+    height: 100%;
+    //left: 0px;
+    //top: 0px;
+
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .banner-text {
+    position: absolute;
+    width: 794px;
+    height: 210px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+      font-size: 30px;
+      line-height: 45px;
+    }
+
+    p {
+      font-size: 25px;
+      line-height: 38px;
+    }
+  }
+}
+.default-card {
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-top: -50px;
+  position: relative;
+
+    .card {
+      position: relative;
+      border: 0.5px solid #000000;
+      box-sizing: border-box;
+      border-radius: 10px;
+      margin-top: 50px;
+      .rate {
+        position: absolute;
+        background: #fff;
+        padding: 5px;
+        right: 10px;
+        top: 10px;
+
+        i {
+          color: goldenrod;
+        }
+      }
+      .card-text{
+        .location{
+          i{
+            color: #2CBF86;
+          }
+        }
+        .btn{
+          background: #2CBF86;
+          border: none;
+        }
+      }
+    }
+}

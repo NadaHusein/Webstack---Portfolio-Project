@@ -1,0 +1,148 @@
+/***Responsive***/
+@media (max-width: 576px) {
+  .landing .filter, .hotels-banner .filter {
+    display: none;
+  }
+  .mobile-filter .filter {
+    display: flex;
+    .btn.search{
+      display: block;
+      width: 100%;
+      margin: 5px;
+    }
+    i{
+      color: #2CBF86;
+    }
+  }
+  #hotelList .nav-pills {
+    margin-top: 17px;
+    border: 2px solid #D5D2D2;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    .nav-item {
+      border:none;
+    }
+    .nav-link{
+      font-size: 15px;
+      padding: 6px;
+
+    }
+    .nav-link.active{
+      background: #EFEFEF;
+      border-radius: 0;
+      color: #198754;
+    }
+  }
+  //about page
+  .banner{
+    .banner-text{
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .counter{
+    margin: auto;
+    position: relative;
+    padding: 15px 0 0 0;
+  }
+  .padding {
+    padding: 0;
+  }
+
+  .deals p{
+    text-align: center;
+  }
+  .social-media{display: none}
+  .mobile-social-media{
+    display: flex;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 26px;
+    i{
+      padding: 20px;
+    }
+
+  }
+  #contact-us .quote{
+    width: 100%;
+    padding: 15px;
+    border-radius: 45px 10px 10px 10px;
+  }
+  .landing .landingpage-text{
+    position: relative;
+    width: 100%;
+    padding: 0;
+  }
+}
+.contact-banner .banner-text,
+.incoming-banner .banner-text,
+.outcoming-banner .banner-text,
+.domestic-banner .banner-text,
+.sightseeing-banner .banner-text,
+.transportation-banner .banner-text,
+.visa-banner .banner-text
+{
+  width: auto;
+  position: relative;
+  text-align: center;
+}
+.contact-form{
+  margin: 15px;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .mobile-filter .filter {
+    display: none;
+  }
+
+}
+@media (max-width: 768px) {
+  #contact-us .quote{
+    width: 100%;
+    padding: 15px;
+    border-radius: 45px 10px 10px 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  #contact-us .quote{
+    width: 90%;
+    padding: 60px;
+    border-radius: 45px 10px 10px 10px;
+  }
+  .landing .filter{
+    width: 100%;
+  }
+  .social-media{display: none}
+  .mobile-social-media{
+    display: flex;
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 26px;
+    i{
+      padding: 20px;
+    }
+
+  }
+}
+
+@media (min-width: 375px) and (max-width: 980px) {
+  .login form, .signup form{
+    width: 100%;
+  }
+  .padding {
+    padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .mobile-social-media{
+    display: none;
+  }
+}

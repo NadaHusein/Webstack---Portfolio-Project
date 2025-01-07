@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+    <title>Generic Theme</title>
+
+    <link rel="shortcut icon" href="SiteAssets/images/favicon.png" sizes="25x25"/>
+
+    <!-- Stylesheets -->
+    <!--    bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--    bootstrap icons cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="SiteAssets/css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="SiteAssets/css/owlcarousel/owl.theme.default.min.css">
+    <!--grid master library-->
+    <link rel="stylesheet" type="text/css" href="SiteAssets/gridMasterLib/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="SiteAssets/gridMasterLib/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="SiteAssets/gridMasterLib/css/component.css" />
+    <script src="SiteAssets/gridMasterLib/js/modernizr.custom.js"></script>
+
+    <link rel="stylesheet" href="SiteAssets/css/main.css" type="text/css"/>
+</head>
+
+<body>
+<header>
+    <div class="menu">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-xxl">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="SiteAssets/images/logo.png" alt="factoryyard-logo" class="logo">
+                    <!-- <span class="logo">Logo</span> -->
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hotels.html">Hotels</a></li>
+                        <!-- Button trigger modal -->
+                        <li class="nav-item"><a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Flights</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="firstNavbarDropdownMenuLink" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Packages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="firstNavbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="incoming.html">Incoming</a></li>
+                                <li><a class="dropdown-item" href="outcoming.html">Outcoming</a></li>
+                                <li><a class="dropdown-item" href="domestic.html">Domestic</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="secondNavbarDropdownMenuLink" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Our Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="secondNavbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="sightseeing.html">Sightseeing</a></li>
+                                <li><a class="dropdown-item" href="transportation.html">Car Rental</a></li>
+                                <li><a class="dropdown-item" href="visa.html">Visa</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item"><a class="nav-link" href="nileCruse.html">Nile Cruise</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title green text-center" id="exampleModalLabel">Registration</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label d-none">Password</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label d-none">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label d-none">Phone Number</label>
+                            <input type="number" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="Phone Number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="guest" class="form-label d-none">No. Guests</label>
+                            <input type="number" class="form-control" id="guest" aria-describedby="emailHelp" placeholder="No. Guest">
+                        </div>
+
+                        <button type="submit" class="btn btn-success">Book</button>
+                    </form>
+                </div>
+                <!--                <div class="modal-footer">-->
+                <!--                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+                <!--                    <button type="button" class="btn btn-success">Book</button>-->
+                <!--                </div>-->
+            </div>
+        </div>
+    </div>
+
+</header>
+<main>
+    <!--start banner section-->
+    <section class="nile-cruse-banner">
+        <div class="overlay">
+            <div class="banner-text">
+                <h1 class="fw-bold white-txt-color text-center">Simple - Unique - Friendly</h1>
+                <p class="text-center white-txt-color">Make yourself at home in our Hotel.</p>
+            </div>
+        </div>
+    </section>
+    <!--end banner section-->
+<!--   start tabs-->
+    <section id="hotelList">
+        <div class="container">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-picks-tab" data-bs-toggle="pill" data-bs-target="#pills-picks" type="button" role="tab" aria-controls="pills-picks" aria-selected="true">Our Top Picks</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false">Homes&Apartments first</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-stars-tab" data-bs-toggle="pill" data-bs-target="#pills-stars" type="button" role="tab" aria-controls="pills-stars" aria-selected="false">Stars (Highest first)</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-starsLowest-tab" data-bs-toggle="pill" data-bs-target="#pills-starsLowest" type="button" role="tab" aria-controls="pills-starsLowest" aria-selected="false">Stars (Lowest first)</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-distance-tab" data-bs-toggle="pill" data-bs-target="#pills-distance" type="button" role="tab" aria-controls="pills-distance" aria-selected="false">Distance From Downtown</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-picks" role="tabpanel" aria-labelledby="pills-picks-tab">
+                    <div class="card p-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-sm-6">
+                                <img src="SiteAssets/images/unsplash_Yrxr3bsPdS0.png" class="img-fluid rounded" alt="...">
+                            </div>
+                            <div class="col-md-9 col-sm-6">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Sun Spalato Views</h5>
+                                        <p class="price">777$</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <button class="btn">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-sm-6">
+                                <img src="SiteAssets/images/unsplash_Yrxr3bsPdS0.png" class="img-fluid rounded" alt="...">
+                            </div>
+                            <div class="col-md-9 col-sm-6">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Sun Spalato Views</h5>
+                                        <p class="price">777$</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <button class="btn">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-sm-6">
+                                <img src="SiteAssets/images/unsplash_Yrxr3bsPdS0.png" class="img-fluid rounded" alt="...">
+                            </div>
+                            <div class="col-md-9 col-sm-6">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Sun Spalato Views</h5>
+                                        <p class="price">777$</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <button class="btn">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="card p-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-sm-6">
+                                <img src="SiteAssets/images/unsplash_Yrxr3bsPdS0.png" class="img-fluid rounded" alt="...">
+                            </div>
+                            <div class="col-md-9 col-sm-6">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Sun Spalato Views</h5>
+                                        <p class="price">777$</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <button class="btn">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-sm-6">
+                                <img src="SiteAssets/images/unsplash_Yrxr3bsPdS0.png" class="img-fluid rounded" alt="...">
+                            </div>
+                            <div class="col-md-9 col-sm-6">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Sun Spalato Views</h5>
+                                        <p class="price">777$</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <button class="btn">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-sm-6">
+                                <img src="SiteAssets/images/unsplash_Yrxr3bsPdS0.png" class="img-fluid rounded" alt="...">
+                            </div>
+                            <div class="col-md-9 col-sm-6">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Sun Spalato Views</h5>
+                                        <p class="price">777$</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <button class="btn">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-stars" role="tabpanel" aria-labelledby="pills-stars-tab">
+                    <div class="card p-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-sm-6">
+                                <img src="SiteAssets/images/unsplash_Yrxr3bsPdS0.png" class="img-fluid rounded" alt="...">
+                            </div>
+                            <div class="col-md-9 col-sm-6">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Sun Spalato Views</h5>
+                                        <p class="price">777$</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <button class="btn">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-sm-6">
+                                <img src="SiteAssets/images/unsplash_Yrxr3bsPdS0.png" class="img-fluid rounded" alt="...">
+                            </div>
+                            <div class="col-md-9 col-sm-6">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Sun Spalato Views</h5>
+                                        <p class="price">777$</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <button class="btn">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-sm-6">
+                                <img src="SiteAssets/images/unsplash_Yrxr3bsPdS0.png" class="img-fluid rounded" alt="...">
+                            </div>
+                            <div class="col-md-9 col-sm-6">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Sun Spalato Views</h5>
+                                        <p class="price">777$</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <button class="btn">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-starsLowest" role="tabpanel" aria-labelledby="pills-starsLowest-tab">
+                    <div class="card p-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-sm-6">
+                                <img src="SiteAssets/images/unsplash_Yrxr3bsPdS0.png" class="img-fluid rounded" alt="...">
+                            </div>
+                            <div class="col-md-9 col-sm-6">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Sun Spalato Views</h5>
+                                        <p class="price">777$</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <button class="btn">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-sm-6">
+                                <img src="SiteAssets/images/unsplash_Yrxr3bsPdS0.png" class="img-fluid rounded" alt="...">
+                            </div>
+                            <div class="col-md-9 col-sm-6">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Sun Spalato Views</h5>
+                                        <p class="price">777$</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <button class="btn">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-sm-6">
+                                <img src="SiteAssets/images/unsplash_Yrxr3bsPdS0.png" class="img-fluid rounded" alt="...">
+                            </div>
+                            <div class="col-md-9 col-sm-6">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Sun Spalato Views</h5>
+                                        <p class="price">777$</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <button class="btn">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-distance" role="tabpanel" aria-labelledby="pills-distance-tab">
+                    <div class="card p-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-sm-6">
+                                <img src="SiteAssets/images/unsplash_Yrxr3bsPdS0.png" class="img-fluid rounded" alt="...">
+                            </div>
+                            <div class="col-md-9 col-sm-6">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Sun Spalato Views</h5>
+                                        <p class="price">777$</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <button class="btn">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-sm-6">
+                                <img src="SiteAssets/images/unsplash_Yrxr3bsPdS0.png" class="img-fluid rounded" alt="...">
+                            </div>
+                            <div class="col-md-9 col-sm-6">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Sun Spalato Views</h5>
+                                        <p class="price">777$</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <button class="btn">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-3 col-sm-6">
+                                <img src="SiteAssets/images/unsplash_Yrxr3bsPdS0.png" class="img-fluid rounded" alt="...">
+                            </div>
+                            <div class="col-md-9 col-sm-6">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="card-title">Sun Spalato Views</h5>
+                                        <p class="price">777$</p>
+                                    </div>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <button class="btn">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<!--   end tabs-->
+</main>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="logo mx-auto">
+                    <img src="SiteAssets/images/logo.png" class="rounded ">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="about.html">About Us</a></li>
+                            <li class="list-group-item"><a href="hotels.html">Hotels</a></li>
+                            <li class="list-group-item"><a href="#">Flights</a></li>
+                            <li class="list-group-item"><a href="#">packages</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#">Our Services</a></li>
+                            <li class="list-group-item"><a href="nileCruse.html">Nile Cruise</a></li>
+                            <li class="list-group-item"><a href="gallery.html">Gallery</a></li>
+                            <li class="list-group-item"><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#"><i class="bi bi-envelope-fill"></i> monaliza@gmail.com</a>
+                    </li>
+                    <li class="list-group-item"><a href="#"><i class="bi bi-telephone-fill"></i> (+202)2526 8282</a>
+                    </li>
+                    <li class="list-group-item"><a href="#"><i class="bi bi-geo-alt-fill"></i> 4 ,Ali EL Kordy ST,El
+                            Maadi, Cairo.Egypt</a></li>
+                    <li class="list-group-item"><a href="#" class="btn btn-outline-light">Join Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="  p-t-20 p-b-15  text-white">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <p class="text-center">All rights reserved &copy; 2022</p>
+                <!--                        <p class="m-b-0">Powered By <a href="#" target="_blank" class="text-white">NH</a></p>-->
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+<!--        bootstrap CDN-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<script src="SiteAssets/js/jquery.min.js"></script>
+<!-- include Owl Carousel plugin js-->
+<script src="SiteAssets/js/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!--grid master library-->
+<script src="SiteAssets/gridMasterLib/js/masonry.pkgd.min.js"></script>
+<script src="SiteAssets/gridMasterLib/js/imagesloaded.pkgd.min.js"></script>
+<script src="SiteAssets/gridMasterLib/js/classie.js"></script>
+<script src="SiteAssets/gridMasterLib/js/colorfinder-1.1.js"></script>
+<script src="SiteAssets/gridMasterLib/js/gridScrollFx.js"></script>
+<script>
+    new GridScrollFx(document.getElementById('grid'), {
+        viewportFactor: 0.4
+    });
+</script>
+
+<script src="SiteAssets/js/script.js"></script>
+
+
+</body>
+
+</html>

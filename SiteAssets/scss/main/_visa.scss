@@ -1,0 +1,93 @@
+.visa-banner {
+  background: url("../../SiteAssets/images/visa.png") no-repeat;
+  background-size: cover;
+  height: 648px;
+  position: relative;
+
+  .overlay {
+    //position: absolute;
+    width: 100%;
+    height: 100%;
+    //left: 0px;
+    //top: 0px;
+
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .banner-text {
+    position: absolute;
+    width: 794px;
+    height: 210px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+      font-size: 30px;
+      line-height: 45px;
+    }
+
+    p {
+      font-size: 25px;
+      line-height: 38px;
+    }
+  }
+}
+.visa-form{
+  margin-top: -50px;
+  margin-bottom: 50px;
+  position: relative;
+  padding: 50px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  .uploaded{
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    .btn{
+      i{
+        color: #F53939;
+        font-size: 23px;
+      }
+    }
+    .img-name{
+      .size{
+        font-size: 14px;
+        line-height: 19px;
+
+        /* identical to box height */
+        letter-spacing: -0.387234px;
+
+        color: #979797;
+      }
+    }
+  }
+  .image-icon{
+    background: #F8F9FA;
+    border: 1px dashed #729FFF;
+    border-radius: 5px;
+    height: 352px;
+    text-align: center;
+    img{
+      padding: 50px;
+    }
+  }
+  form{
+    .btn{
+      width: 100%;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 27px;
+
+      /* identical to box height */
+      text-align: center;
+
+      color: #FFFFFF;
+      background: #2CBF86;
+      border-radius: 10px;
+    }
+  }
+}

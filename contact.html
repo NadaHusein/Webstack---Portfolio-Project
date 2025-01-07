@@ -1,171 +1,267 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
 <head>
-<title>المساعدة</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
-<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
-<script type="text/javascript" src="js/jquery-1.js"></script>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery.form.js"></script>
-<script src="contactformvalidation.js"></script>
+    <meta charset="UTF-8"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+    <title>Generic Theme</title>
 
-<script>
-	required.add('Full_Name','NOT_EMPTY','Full Name');
-	required.add('Email_Address','EMAIL','Email Address');
-	required.add('Your_Message','NOT_EMPTY','Your Message');
-	required.add('AntiSpam','NOT_EMPTY','Anti-Spam Question');
+    <link rel="shortcut icon" href="SiteAssets/images/favicon.png" sizes="25x25"/>
 
+    <!-- Stylesheets -->
+    <!--    bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--    bootstrap icons cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-</script>
-<script>
-		    // You can also use "$(window).load(function() {"
-			    $(function () {
-			      // Slideshow 1
-			      $("#slider1").responsiveSlides({
-			        maxwidth: 2500,
-			        speed: 600
-			      });
-				 
-				 
-			});
-			
-			function loadProg()
-				 {
-			$('#btn-close').show();
-				 $('.prog').html('<iframe src="en_ITEPC_VA_Desktop_v40/index.html" style="width: 975px; height: 610px; border: 2px solid #cccccc; border-radius: 12px;  margin-top: 23px;">');
-				 }
-		  </script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="SiteAssets/css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="SiteAssets/css/owlcarousel/owl.theme.default.min.css">
+    <!--grid master library-->
+    <link rel="stylesheet" type="text/css" href="SiteAssets/gridMasterLib/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="SiteAssets/gridMasterLib/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="SiteAssets/gridMasterLib/css/component.css" />
+    <script src="SiteAssets/gridMasterLib/js/modernizr.custom.js"></script>
 
-
+    <link rel="stylesheet" href="SiteAssets/css/main.css" type="text/css"/>
 </head>
+
 <body>
-		<!---start-wrap---->
-			<!---start-header---->
-			<div class="header">
-				<div class="wrap">
+<header>
+    <div class="menu">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-xxl">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="SiteAssets/images/logo.png" alt="factoryyard-logo" class="logo">
+                    <!-- <span class="logo">Logo</span> -->
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hotels.html">Hotels</a></li>
+                        <!-- Button trigger modal -->
+                        <li class="nav-item"><a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Flights</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="firstNavbarDropdownMenuLink" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Packages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="firstNavbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="incoming.html">Incoming</a></li>
+                                <li><a class="dropdown-item" href="outcoming.html">Outcoming</a></li>
+                                <li><a class="dropdown-item" href="domestic.html">Domestic</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="secondNavbarDropdownMenuLink" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Our Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="secondNavbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="sightseeing.html">Sightseeing</a></li>
+                                <li><a class="dropdown-item" href="transportation.html">Car Rental</a></li>
+                                <li><a class="dropdown-item" href="visa.html">Visa</a></li>
+                            </ul>
+                        </li>
 
 
-<div class="top-nav">
-<ul>
-<li><a href="index.html">
-<i class="fa fa-home"></i> الرئيسة</a></li>
-<li><a href="./help.html"><i class="fa fa-life-ring"></i> التعليمات</a></li>
-<li><a href="aims.html"><i class="fa fa-crosshairs"></i> الأهداف</a></li>
-<li><a href="./menu.html"><i class="fa fa-folder-open-o"></i> الموديولات</a></li>
-<li class="active"><a href="contact.html"><i class="fa fa-envelope"></i> اتصل بنا</a></li>
-</ul>
-</div>
-<div class="clear"> </div>
-</div>
-			<!---End-header---->
-		</div>
-		<!---End-wrap---->
-		<div class="clear"> </div>
-		<!---start-content---->
-		<div class="content">
-			<div class="wrap">
-			<!---start-contact---->
-			<div class="section group">				
-<div class="col span_1_of_3" style="float:right; direction:rtl; text-align:right;">
-<div class="contact_info">
-<h3 style="font-family:fonty;">المساعدة والاتصال:</h3>
-</div>
-<div class="company_address">
-<h3>يمكنكم الاتصال بمسؤول الموقع<br/> عبر الوسائل التالية :</h3>
+                        <li class="nav-item"><a class="nav-link" href="nileCruse.html">Nile Cruise</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
 
-<p>هاتف: 01099339558</p>
-<p style="margin-top:10px;">
-<span><a href="https://www.facebook.com/groups/1263749231056435/?ref=share" target="_blank"><img src="images/icons/facebook.png" /></a></span> <br/>
-<span><a href="https://web.whatsapp.com/" target="_blank"><img src="images/icons/whats.png" /></a></span> <br/><br/>
-لرفع الأنشطة والتواصل يرجى المراسلة علي البريد التالي : 
-<br/>
-DigiContent3@gmail.com
-
-
-
-
-
-
-
-</p>
-</div>
-</div>				
-
-<div class="col span_2_of_3" style="float:left;">
-<div class="contact-form">
-<h3 style="font-family:fonty; text-align:right; direction:rtl;">نموذج المراسلة:</h3>
-
-<div id="contact_form_1" style="margin-top:20px;">
-<!-- contact-form START here -->
-<div id="error-msg" style=" text-align:right; font-size:14px;">
-<p class="error wrong_name"><small><strong>من فضلك أكتب الإسم</strong></small></p>
-<p class="error wrong_email"><small><strong>من فضلك اكتب البريد الإلكترونى</strong></small></p>
-<p class="error wrong_message"><small><strong>من فضلك أكتب الرسالة</strong></small></p>
-</div>
-
-<form action="contact.php" id="contact_form" method="post">
-<div>
-<span><label>الإسم</label></span>
-<span><input name="cform_name" id="name" type="text" class="textbox"></span>
-</div>
-<div>
-<span><label>البريد الإلكترونى</label></span>
-<span><input name="cform_email" id="email" type="text" class="textbox"></span>
-</div>
-<div>
-<span><label>الهاتف</label></span>
-<span><input name="cform_phone" id="phone" type="text" class="textbox"></span>
-</div>
-<div>
-<span><label>الرسالة</label></span>
-<span><textarea name="cform_message" id="message"> </textarea></span>
-</div>
-<div>
-<span><input type="button" class="mybutton" value="إرسال" name="submit" id="submit" onclick="alert('تم ارسال الرسالة بنجاح');"></span>
-</div>
-</form>
-
-</div>
-</div>				
-
-</div>
-</div>
-<!---End-contact---->
-<div class="clear"> </div>
-</div>
-</div>
-<!---End-content---->
-<div class="clear"> </div>
-
-
-
-<div class="clear"></div>
-
-	</html>
-<!--
-
-<div class="search">
-<form class="searchform cf" action="http://www.google.com/search" method="get" target="_blank">
-<input name="q" type="text" placeholder="اكتب ما تريد البحث عنه هنا" />
-<button type="submit" name="go" id="go">بحث</button>
-
-<div class="checkMe" style="display:none;">	
-<input type="checkbox" class="Mycheckbox"  name="sitesearch" value="augbookmaster.com" checked />
-    <label for="checkbox">بحث داخل الموقع</label> 
+            </div>
+        </nav>
     </div>
-</form>
-</div>
-
-<div class="clear"> </div>
-					</div>
-</div>
-</div>      
-
-<div style="margin:0px auto; display:block; width:53%;">
 
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title green text-center" id="exampleModalLabel">Registration</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label d-none">Password</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label d-none">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label d-none">Phone Number</label>
+                            <input type="number" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="Phone Number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="guest" class="form-label d-none">No. Guests</label>
+                            <input type="number" class="form-control" id="guest" aria-describedby="emailHelp" placeholder="No. Guest">
+                        </div>
+
+                        <button type="submit" class="btn btn-success">Book</button>
+                    </form>
+                </div>
+                <!--                <div class="modal-footer">-->
+                <!--                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+                <!--                    <button type="button" class="btn btn-success">Book</button>-->
+                <!--                </div>-->
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<main>
+        <!--start banner section-->
+        <section class="contact-banner">
+            <div class="overlay">
+                <div class="banner-text">
+                    <h1 class="h4 white-txt-color text-center">If You Have Any Questions,<br>
+                        Don’t Hesitate To Contact Us.</h1>
+                    <p class="fw-bold white-txt-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--end banner section-->
+<!--        start form-->
+        <section id="contact-form">
+            <div class="contact-form">
+                <form>
+                    <h2 class="text-center my-5 fw-bold green">Get in touch with us.</h2>
+                    <div class="mb-3">
+                        <label for="yourName" class="form-label d-none">Your Name</label>
+                        <input type="text" class="form-control" id="yourName" aria-describedby="yourName"
+                               placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputEmail1" class="form-label d-none">Email address</label>
+                        <input type="email" class="form-control" id="InputEmail1"
+                               aria-describedby="emailHelp" placeholder="Your Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phoneNumber" class="form-label d-none">Phone Number</label>
+                        <input type="number" class="form-control" id="phoneNumber"
+                               aria-describedby="emailHelp" placeholder="Your Phone Number">
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Your Message" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Enter Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                    <div class="contact-info d-flex flex-wrap justify-content-around">
+                        <a href="#"><p class="green"><i class="bi bi-envelope-fill"></i> monaliza@gmail.com</p></a>
+                        <a href="#"><p class="green"><i class="bi bi-telephone-fill"></i> (+202)2526 8282</p></a>
+                        <a href="#"><p class="green"><i class="bi bi-geo-alt-fill"></i> 4 ,Ali EL Kordy ST,El Maadi, Cairo.Egypt</p></a>
+                    </div>
+                </form>
+
+            </div>
+
+        </section>
+<!--        end form-->
+    </main>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="logo mx-auto">
+                    <img src="SiteAssets/images/logo.png" class="rounded ">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="about.html">About Us</a></li>
+                            <li class="list-group-item"><a href="hotels.html">Hotels</a></li>
+                            <li class="list-group-item"><a href="#">Flights</a></li>
+                            <li class="list-group-item"><a href="#">packages</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#">Our Services</a></li>
+                            <li class="list-group-item"><a href="nileCruse.html">Nile Cruise</a></li>
+                            <li class="list-group-item"><a href="gallery.html">Gallery</a></li>
+                            <li class="list-group-item"><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#"><i class="bi bi-envelope-fill"></i> monaliza@gmail.com</a>
+                    </li>
+                    <li class="list-group-item"><a href="#"><i class="bi bi-telephone-fill"></i> (+202)2526 8282</a>
+                    </li>
+                    <li class="list-group-item"><a href="#"><i class="bi bi-geo-alt-fill"></i> 4 ,Ali EL Kordy ST,El
+                            Maadi, Cairo.Egypt</a></li>
+                    <li class="list-group-item"><a href="#" class="btn btn-outline-light">Join Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="  p-t-20 p-b-15  text-white">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <p class="text-center">All rights reserved &copy; 2022</p>
+                <!--                        <p class="m-b-0">Powered By <a href="#" target="_blank" class="text-white">NH</a></p>-->
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+<!--        bootstrap CDN-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<script src="SiteAssets/js/jquery.min.js"></script>
+<!-- include Owl Carousel plugin js-->
+<script src="SiteAssets/js/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!--grid master library-->
+<script src="SiteAssets/gridMasterLib/js/masonry.pkgd.min.js"></script>
+<script src="SiteAssets/gridMasterLib/js/imagesloaded.pkgd.min.js"></script>
+<script src="SiteAssets/gridMasterLib/js/classie.js"></script>
+<script src="SiteAssets/gridMasterLib/js/colorfinder-1.1.js"></script>
+<script src="SiteAssets/gridMasterLib/js/gridScrollFx.js"></script>
+<script>
+    new GridScrollFx(document.getElementById('grid'), {
+        viewportFactor: 0.4
+    });
+</script>
+
+<script src="SiteAssets/js/script.js"></script>
+
+
+</body>
 
 </html>
